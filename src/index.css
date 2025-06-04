@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import "tailwindcss";
+
+@utility container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+}
+
+@theme {
+  /* ## Colors */
+
+  --color-Red: hsl(14, 86%, 42%);
+  --color-Green: hsl(159, 69%, 38%);
+
+  --color-Rose-50: hsl(20, 50%, 98%);
+  --color-Rose-100: hsl(13, 31%, 94%);
+  --color-Rose-300: hsl(14, 25%, 72%);
+  --color-Rose-400: hsl(7, 20%, 60%);
+  --color-Rose-500: hsl(12, 20%, 44%);
+  --color-Rose-900: hsl(14, 65%, 9%);
+
+  --font-Red-Hat-Text: "Red Hat Text", sans-serif;
+}
+
+* {
+  @apply box-border
+}
+
+body {
+  @apply text-base font-Red-Hat-Text bg-Rose-50
+}
+.overlay {
+  @apply fixed top-0 left-0 bg-black/50 w-full h-full grid place-items-center z-20 max-md:pb-0 max-md:items-end py-10 overflow-auto 
+}
